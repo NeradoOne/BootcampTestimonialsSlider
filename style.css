@@ -1,154 +1,161 @@
-:root{
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 32px;
-    --main-color: hsl(240, 37%, 20%);
-    --sec-color: hsl(240, 18%, 77%);
-    --sec-color-transparent: hsla(240, 18%, 77%, 0.3);
-    color: var(--main-color);
+:root {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 32px;
+  --main-color: hsl(240, 37%, 20%);
+  --sec-color: hsl(240, 18%, 77%);
+  --sec-color-transparent: hsla(240, 18%, 77%, 0.3);
+  color: var(--main-color);
 }
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-.txt-sec{ color: hsl(240, 18%, 77%); font: 500; }
-.txt-sec b{ color: hsl(240, 38%, 20%); }
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.attribution {
+  font-size: 11px;
+  text-align: center;
 }
-.container{
-    max-width: 1024px;
-    width: 80%;
-    background-image: url(./images/pattern-curve.svg);
-    background-repeat: no-repeat;
-    background-position-y: 120%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
-.card{
-    background-image: url('./images/pattern-bg.svg');
-    background-size: contain;
-    background-position-x: right;
-    background-repeat: no-repeat;
-    margin: .5em;
-    padding: .5em;
-    display: grid;
-    grid-template-columns: 7fr 2fr;
-    grid-template-areas: "testimonial img";
+.txt-sec {
+  color: hsl(240, 18%, 77%);
+  font: 500;
 }
-.testimonial{
-    grid-area: testimonial;
-    z-index: 1;
+.txt-sec b {
+  color: hsl(240, 38%, 20%);
 }
-.quote{
-    padding: 1em;
-    font-weight: lighter;
-    background-image: url('./images/pattern-quotes.svg');
-    background-repeat: no-repeat;
-    background-position-x: 4em;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.name{
-    font-size: .8em;
+.container {
+  max-width: 1024px;
+  width: 80%;
+  background-image: url(./images/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-position-y: 120%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.name span{
-    font-weight: 300;
-    color: var(--sec-color);
+.card {
+  background-image: url("./images/pattern-bg.svg");
+  background-size: contain;
+  background-position-x: right;
+  background-repeat: no-repeat;
+  margin: 0.5em;
+  padding: 0.5em;
+  display: grid;
+  grid-template-columns: 7fr 2fr;
+  grid-template-areas: "testimonial img";
+}
+.testimonial {
+  grid-area: testimonial;
+  z-index: 1;
+}
+.quote {
+  padding: 1em;
+  font-weight: lighter;
+  background-image: url("./images/pattern-quotes.svg");
+  background-repeat: no-repeat;
+  background-position-x: 4em;
+}
+.name {
+  font-size: 0.8em;
+}
+.name span {
+  font-weight: 300;
+  color: var(--sec-color);
 }
 
 .pic {
-    margin: 1em;
-    margin-left: -4em;
-    grid-area: img;
-    height: 10em;
-    z-index: 0;
-    border-radius: 4px;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+  margin: 1em;
+  margin-left: -4em;
+  grid-area: img;
+  height: 10em;
+  z-index: 0;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
 }
-.selector{
-    grid-area: img;
-    align-self: end;
-    z-index: 1;
-    margin-left: -100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 2em;
-    background-color: var(--sec-color-transparent);
-    border-radius: 50px;
-    margin-bottom: .5em;
-    box-shadow: -3px 3px 8px rgba(0, 0, 0, 0.4);
-
+.selector {
+  grid-area: img;
+  align-self: end;
+  z-index: 1;
+  margin-left: -100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 2em;
+  background-color: var(--sec-color-transparent);
+  border-radius: 50px;
+  margin-bottom: 0.5em;
+  box-shadow: -3px 3px 8px rgba(0, 0, 0, 0.4);
 }
-.select{
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain ;
-    width: 1em;
-    height: .7em;
-    transition: .5s ease-in all;
-    border: 1px transparent var(--sec-color);
+.select {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 1em;
+  height: 0.7em;
+  transition: 0.5s ease-in all;
+  border: 1px transparent var(--sec-color);
 }
-.prev{
-    background-image: url(./images/icon-prev.svg);
-    border-bottom-left-radius: 50px;
-    border-top-left-radius: 50px;
+.prev {
+  background-image: url(./images/icon-prev.svg);
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
 }
-.next{
-    background-image: url(./images/icon-next.svg);
-    border-bottom-right-radius: 50px;
-    border-top-right-radius: 50px;
-    border-left: 1px solid var(--sec-color);
+.next {
+  background-image: url(./images/icon-next.svg);
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  border-left: 1px solid var(--sec-color);
 }
-.next:hover , .prev:hover {
-    background-color: hsla(240, 18%, 77%, 0.7);
-}
-
-@media only screen and (max-width: 1228px){
-    /* .selector{
-        margin-bottom: 1.5em;
-    } */
-    :root{
-        font-size: 24px;        
-    }
+.next:hover,
+.prev:hover {
+  background-color: hsla(240, 18%, 77%, 0.7);
 }
 
-@media only screen and (max-width: 768px){
-    :root{
-        font-size: 16px;        
-    }
+@media only screen and (max-width: 1228px) {
+  :root {
+    font-size: 24px;
+  }
 }
 
-@media only screen and (max-width:600px){
-    body{
-        text-align: center;
-    }
-    .card{
+@media only screen and (max-width: 768px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    text-align: center;
+  }
+  .card {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "img" "testimonial";
-    }
-    .container{
-        height: 80%;
-    }
-    .name{
-        display: inline-grid;
-    }
-    .pic{
-        margin: 1em;
-        align-self: center;
-        justify-self: center;
-        height: 15em;
-    }
-    .selector{
-        margin: 0;
-        justify-self: center;
-        margin-bottom: .5em;
-    }
-    .select{
-        background-color: #fff;
-        width: 5em;
-        height: 1em;
-    }
+  }
+  .container {
+    height: 80%;
+  }
+  .name {
+    display: inline-grid;
+  }
+  .pic {
+    margin: 1em;
+    align-self: center;
+    justify-self: center;
+    height: 15em;
+  }
+  .selector {
+    margin: 0;
+    justify-self: center;
+    margin-bottom: 0.5em;
+  }
+  .select {
+    background-color: #fff;
+    width: 5em;
+    height: 1em;
+  }
 }
