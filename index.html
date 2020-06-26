@@ -20,7 +20,7 @@
   </head>
   <body>
     <main class="container">
-      <section class="card">
+      <section id="card" class="card show">
         <div class="testimonial">
           <p class="quote">
             “ I’ve been interested in coding for a while but never taken the
@@ -30,10 +30,36 @@
           <h2 class="name">Tanya Sinclair <span>UX Engineer</span></h2>
         </div>
         <img class="pic" src="./images/image-tanya.jpg" alt="Tanya's Photo" />
-        <div class="selector">
-          <a class="select prev" href="./index2.html"></a>
-          <a class="select next" href="./index2.html"></a>
+        <button id="btn" class="btn selector">
+          <svg class="prev" xmlns="http://www.w3.org/2000/svg" width="12" height="18">
+            <path fill="none" stroke="#8585AC" stroke-width="3" d="M11 1L3 9l8 8"/>
+          </svg>
+          <svg class="next" xmlns="http://www.w3.org/2000/svg" width="13" height="18">
+            <path  fill="none" stroke="#8585AC" stroke-width="3" d="M2 1l8 8-8 8"/>
+          </svg>
+        </button>
+      </section>
+      <section id="card2" class="card" >
+        <div class="testimonial">
+          <p class="quote">
+            “ If you want to lay the best foundation possible I’d recommend
+            taking this course. The depth the instructors go into is incredible.
+            I now feel so confident about starting up as a professional
+            developer. ”
+          </p>
+          <h2 class="name">
+            John Tarkpor <span>Junior Front-end Developer</span>
+          </h2>
         </div>
+        <img class="pic" src="./images/image-john.jpg" alt="John's Photo" />
+        <button id="btn2" class="btn selector">
+          <svg class="prev" xmlns="http://www.w3.org/2000/svg" width="12" height="18">
+            <path fill="none" stroke="#8585AC" stroke-width="3" d="M11 1L3 9l8 8"/>
+          </svg>
+          <svg class="next" xmlns="http://www.w3.org/2000/svg" width="13" height="18">
+            <path fill="none" stroke="#8585AC" stroke-width="3" d="M2 1l8 8-8 8"/>
+          </svg>
+        </button>
       </section>
       <footer class="attribution">
         Challenge by
@@ -42,5 +68,6 @@
         >. Coded by <a href="#">Marcos De La Flor</a>.
       </footer>
     </main>
+    <script src="./main.js"></script>
   </body>
 </html>
