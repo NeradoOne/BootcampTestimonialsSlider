@@ -47,6 +47,7 @@ body {
   display: grid;
   grid-template-columns: 7fr 2fr;
   grid-template-areas: "testimonial img";
+  display: none;
 }
 .testimonial {
   grid-area: testimonial;
@@ -84,36 +85,22 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 2em;
-  background-color: var(--sec-color-transparent);
-  border-radius: 50px;
+  width: 7em;
+  height: 3em;
+  background-color: whitesmoke;
+  border-radius: 30px;
+  border: none;
   margin-bottom: 0.5em;
   box-shadow: -3px 3px 8px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: 0.3s ease-in all;
 }
-.select {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 1em;
-  height: 0.7em;
-  transition: 0.5s ease-in all;
-  border: 1px transparent var(--sec-color);
+.selector:focus{outline:none;}
+.selector:hover{padding: 0;}
+.selector svg path {stroke: var(--main-color);
 }
-.prev {
-  background-image: url(./images/icon-prev.svg);
-  border-bottom-left-radius: 50px;
-  border-top-left-radius: 50px;
-}
-.next {
-  background-image: url(./images/icon-next.svg);
-  border-bottom-right-radius: 50px;
-  border-top-right-radius: 50px;
-  border-left: 1px solid var(--sec-color);
-}
-.next:hover,
-.prev:hover {
-  background-color: hsla(240, 18%, 77%, 0.7);
-}
+
+.show{display: grid;}
 
 @media only screen and (max-width: 1228px) {
   :root {
